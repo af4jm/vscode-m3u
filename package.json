@@ -9,7 +9,7 @@
         "email": "af4jm@users.noreply.github.com"
     },
     "license": "Apache-2.0",
-    "icon": "./images/m3u-128.png",
+    "icon": "images/m3u-128.png",
     "bugs": {
         "url": "https://github.com/af4jm/vscode-m3u/issues"
     },
@@ -39,20 +39,20 @@
                     ".m3u8"
                 ],
                 "firstLine": "^#!/.*\\b#EXTM3U*\\b",
-                "configuration": "./syntaxes/m3u.configuration.json"
+                "configuration": "syntaxes/m3u.configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "m3u",
                 "scopeName": "text.m3u",
-                "path": "./syntaxes/m3u.syntax.json"
+                "path": "syntaxes/m3u.syntax.json"
             }
         ],
         "snippets": [
             {
                 "language": "m3u",
-                "path": "./snippets/m3u.json"
+                "path": "snippets/m3u.json"
             }
         ]
     }
