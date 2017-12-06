@@ -1,0 +1,59 @@
+{
+    "name": "vscode-m3u",
+    "displayName": "M3U",
+    "description": "M3U language definition for VSCode. (Adapted from .tmLanguage file in https://github.com/msal/sublime-m3u. Icon from iconfinder.com.)",
+    "version": "1.0.0",
+    "publisher": "af4jm",
+    "author": {
+        "name": "John Meyer (AF4JM)",
+        "email": "af4jm@users.noreply.github.com"
+    },
+    "license": "Apache-2.0",
+    "icon": "./images/m3u-128.png",
+    "bugs": {
+        "url": "https://github.com/af4jm/vscode-m3u/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/af4jm/vscode-m3u.git"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "m3u",
+                "aliases": [
+                    "m3u",
+                    "M3U",
+                    "m3u8",
+                    "M3U8"
+                ],
+                "extensions": [
+                    ".m3u",
+                    ".m3u8"
+                ],
+                "firstLine": "^#!/.*\\b#EXTM3U*\\b",
+                "configuration": "./syntaxes/m3u.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "m3u",
+                "scopeName": "text.m3u",
+                "path": "./syntaxes/m3u.syntax.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "m3u",
+                "path": "./snippets/m3u.json"
+            }
+        ]
+    }
+}

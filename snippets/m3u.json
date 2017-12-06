@@ -1,0 +1,22 @@
+{
+    "EXTINF:": {
+        "description": "#EXTINF: tag",
+        "prefix": "inf",
+        "body": [ "#EXTINF:${1:0},$0" ]
+    },
+    "EXTM3U": {
+        "description": "#EXTM3U tag",
+        "prefix": "m3u",
+        "body": [ "#EXTM3U" ]
+    },
+    "EXTVLCOPT:": {
+        "description": "#EXTVLCOPT: tag (for the next entry)",
+        "prefix": "vlc1",
+        "body": [ "#EXTVLCOPT:${1:option}=${2:value}$0" ]
+    },
+    "EXTVLCOPT--": {
+        "description": "#EXTVLCOPT-- tag (for all following entries)",
+        "prefix": "vlc2",
+        "body": [ "#EXTVLCOPT--${1:option}=${2:value}$0" ]
+    }
+}
