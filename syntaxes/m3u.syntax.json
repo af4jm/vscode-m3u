@@ -40,7 +40,25 @@
             ]
         },
         {
-            "begin": "^#EXT[A-Za-z]+(\\:|\\-\\-)",
+            "begin": "^#EXT[A-Za-z0-9]+(\\:|\\-\\-)",
+            "beginCaptures": {
+                "0": {
+                    "name": "support.constant.m3u"
+                }
+            },
+            "end": "(=)(.*)|$",
+            "endCaptures": {
+                "1": {
+                    "name": "keyword.control.m3u"
+                },
+                "2": {
+                    "name": "support.variable.m3u"
+                }
+            },
+            "name": "meta.function.ext.m3u"
+        },
+        {
+            "begin": "^#EXT\\-X\\-[A-Za-z0-9]+(\\:|\\-\\-)",
             "beginCaptures": {
                 "0": {
                     "name": "support.constant.m3u"
